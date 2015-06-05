@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.task.dragdropdemo.DragDropActivity" >
+
+    <TextView
+        android:id="@+id/viewRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="34dp"
+     	android:height="80dp"
+     	android:width="80dp"
+     	android:background="@drawable/redshape"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/viewGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/viewRed"
+        android:layout_alignBottom="@+id/viewRed"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/viewRed"
+        android:background="@drawable/greenshape"
+        android:height="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:width="80dp" />
+
+    <TextView
+        android:id="@+id/viewDropZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewRed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/viewGreen"
+        android:layout_marginBottom="71dp"
+        android:height="120dp"
+        android:gravity="center"
+        android:textColor="@color/maroon"
+        android:text="@string/drop_zone_text"
+        android:background="@drawable/dropzoneshape"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

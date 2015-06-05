@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Drag Drop Demo</string>
+      <string name="action_settings">Settings</string>
+	<string name="drop_zone_text">Drop Zone</string>
+</resources>
